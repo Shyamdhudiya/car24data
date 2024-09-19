@@ -30,7 +30,6 @@ df.reset_index(drop=True, inplace=True)
 print(df.head())
 
 print(df.info())
-
 print(df.describe())
 
 df.to_csv('cleaned_car_data.csv', index=False)

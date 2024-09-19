@@ -1,5 +1,4 @@
 # car24data
-
 !pip install selenium
 
 import requests as re

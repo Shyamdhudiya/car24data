@@ -13,8 +13,6 @@ for col in df.select_dtypes(include=['object']).columns:
 
 df['KM_Driven'] = df['KM_Driven'].str.replace(',', '').str.extract('(\d+)').astype(float)
 
-# df['Car_Price'] = df['Car_Price(lakh)'].str.replace('₹', '').str.replace(',', '').astype(str)
-
 df['Monthly_EMI'] = df['Monthly_EMI'].str.replace('₹', '').str.replace(',', '').astype(float)
 
 df['Owner_Type'] = df['Owner_Type'].str.lower()
